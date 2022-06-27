@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ReproductionProjectBug_ShellScroll.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ReproductionProjectBug_ShellScroll"
+    FlyoutHeaderBehavior="CollapseOnScroll"
+    Shell.FlyoutBehavior="Flyout">
+
+    <Shell.FlyoutHeader>
+
+        <ContentView
+            xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            HeightRequest="200">
+
+
+            <Grid Padding="10" BackgroundColor="{StaticResource Primary}">
+                <Label Text="Header" FontSize="Title" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+                <Image Aspect="AspectFit" Source="dotnet_bot.svg" />
+               
+            </Grid>
+
+        </ContentView>
+
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Home" Route="MainFlyout">
+
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Info" Route="MainFlyout2">
+
+        <ShellContent
+            Title="Info"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage2" />
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Help" Route="MainFlyout3">
+
+        <ShellContent
+            Title="Help"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage3" />
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Route="MainFlyout4">
+
+        <ShellContent
+            Title="Help"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage4" />
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Links" Route="MainFlyout5">
+
+        <ShellContent
+            Title="Help"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage5" />
+
+    </FlyoutItem>
+
+    <Shell.FlyoutFooter>
+
+        <ContentView
+            xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:sys="clr-namespace:System;assembly=netstandard"
+            HeightRequest="80">
+
+            <Grid>
+
+                <Grid Padding="15" BackgroundColor="{StaticResource Primary}">
+                    <Label Text="Footer" FontSize="Title" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+                    <Image Aspect="AspectFit" Source="dotnet_bot.svg" />
+                </Grid>
+
+
+            </Grid>
+
+        </ContentView>
+
+    </Shell.FlyoutFooter>
+
+</Shell>
