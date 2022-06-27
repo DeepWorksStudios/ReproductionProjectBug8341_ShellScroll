@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReproductionProjectBug_ShellScroll", "ReproductionProjectBug_ShellScroll.csproj", "{7D22B21D-9B39-4C1B-982A-2666E1829DFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReproductionProjectBug8341_ShellScroll", "ReproductionProjectBug8341_ShellScroll.csproj", "{7D22B21D-9B39-4C1B-982A-2666E1829DFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
